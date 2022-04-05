@@ -43,15 +43,20 @@
         <Key
             android:codes="57"
             android:keyLabel="9"
-            android:keyEdgeFlags="right"/>
+            />
+    <Key
+        android:keyEdgeFlags="right"
+        android:codes="48999"
+        android:keyWidth="0.1%p"
+        android:keyLabel="" />
 </Row>
 <Row>
         <Key
             android:keyEdgeFlags="left"
             android:codes="48"
-
+            android:keyWidth="29%p"
             android:keyLabel="0" />
-<!--        <Key android:codes="-5" android:isRepeatable="true" android:keyWidth="15%p" android:keyIcon="@drawable/ic_baseline_close_black" android:keyEdgeFlags="right"/>-->
+<!--        <Key android:codes="-5" android:isRepeatable="true"  android:keyIcon="@drawable/ic_baseline_close_black" android:keyEdgeFlags="right"/>-->
 
     </Row>
 
