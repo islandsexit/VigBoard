@@ -1,4 +1,4 @@
-package com.sojebsikder.VigBoard;
+package ru.vigtech.VigBoard;
 
 import android.app.Dialog;
 import android.inputmethodservice.InputMethodService;
@@ -12,6 +12,8 @@ import android.view.View;
 import android.view.Window;
 import android.view.inputmethod.InputConnection;
 import android.view.inputmethod.InputMethodManager;
+
+
 
 public class MyInputMethodService extends InputMethodService implements KeyboardView.OnKeyboardActionListener {
 
@@ -29,9 +31,9 @@ public class MyInputMethodService extends InputMethodService implements Keyboard
         kv = (KeyboardView) getLayoutInflater().inflate(R.layout.keyboard_view, null);
         keyboard = new Keyboard(this, R.xml.symbols);
         symbolKeyboard = new Keyboard(this, R.xml.symbols);
-
         kv.setKeyboard(symbolKeyboard);
         kv.setOnKeyboardActionListener(this);
+        kv.setShifted(true);
         return kv;
     }
 
@@ -94,7 +96,7 @@ public class MyInputMethodService extends InputMethodService implements Keyboard
 
             default:
                 char code = (char) primaryCode;
-                if (Character.isLetter(code) && caps) {
+                if (Character.isLetter(code)) {
                     code = Character.toUpperCase(code);
                 }
                 // get back to shift key off

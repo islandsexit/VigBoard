@@ -1,8 +1,9 @@
-package com.sojebsikder.VigBoard;
+package ru.vigtech.VigBoard;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
 
 public class MainActivity extends AppCompatActivity {
 

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.sojebsikder.VigBoard">
+    package="ru.vigtech.VigBoard">
 
     <application
         android:allowBackup="true"
@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Skeyboard">
         <activity
-            android:name="com.sojebsikder.VigBoard.MainActivity"
+            android:name="MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -20,8 +20,8 @@
         </activity>
 
         <service
-            android:name="com.sojebsikder.VigBoard.MyInputMethodService"
-            android:label="Skeyboard"
+            android:name="MyInputMethodService"
+            android:label="VigBoard"
             android:permission="android.permission.BIND_INPUT_METHOD"
             android:exported="true">
 

@@ -1,4 +1,4 @@
-package com.sojebsikder.VigBoard;
+package ru.vigtech.VigBoard;
 
 import android.content.Context;
 
